@@ -22,6 +22,8 @@
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<!-- Lightbox Stylesheets -->
 	<link rel="stylesheet" href="css/lightbox.min.css">
+	<!-- Animate Stylesheets -->
+	<link rel="stylesheet" href="css/animate.css" type="text/css">
 	<!-- Parallax Stylesheets -->
 	<link rel="stylesheet" href="css/parallax.css" type="text/css">
 	<!-- Template Main Stylesheets -->
@@ -44,12 +46,12 @@
 							<span class="menubar2"></span>
 							<span class="menubar3"></span>
 						</button>
-						<a class="navbar-brand d-md-block d-lg-none" href="index.html">
+						<a class="navbar-brand d-md-block d-lg-none" href="index-animated.html">
 							<img class="logo logo-white" src="images/logo.png" alt="logo">
 							<img class="logo logo-color" src="images/logo-color.png" alt="logo">
 						</a>
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
-							<a class="navbar-brand d-none d-sm-none d-md-none d-lg-block" href="index.html">
+							<a class="navbar-brand d-none d-sm-none d-md-none d-lg-block" href="index-animated.html">
 								<img class="logo logo-white" src="images/logo.png" alt="logo">
 								<img class="logo logo-color" src="images/logo-color.png" alt="logo">
 							</a>
@@ -88,14 +90,15 @@
 	<!-- start slider and home section -->
 	<section id="home" class="home">
         <div class="home-top-banner banner-1">
+			<div id="particles-js"></div>
             <div class="display-table">
                 <div class="display-table-cell">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-12">
 								<div class="banner-content banner-content-fullwidth">
-									<h3>Hi, I'm</h3>
-									<h1 class="header-title-text type-animate">
+									<h3 class="wow slideInLeft">Hi, I'm</h3>
+									<h1 class="header-title-text type-animate wow slideInRight">
 										<a href="" class="typewrite" data-period="2000" data-type='[ "Emma Jones", "Proffessional", "Creative Director", "From United States" ]'>
 										<span class="wrap"></span>
 										</a>&nbsp;
@@ -154,7 +157,7 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<!-- start section title-wrap -->
-					<div class="title-wrap">
+					<div class="title-wrap wow zoomIn">
 						<div class="section-title-box">
 							<h2 class="section-title">About <strong>Me</strong></h2>
 						</div><!-- end section-title-box -->
@@ -185,25 +188,25 @@
 				<div class="col-sm-12">
 					<div class="nav-tab-menu">
 						<ul class="nav nav-tabs" id="mgsAboutTab" role="tablist">
-							<li class="nav-item" role="presentation">
+							<li>
 								<button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="true">
 									<i class="fas fa-paper-plane"></i>
 									<span class="tab-title text-bold">Experience</span>
 								</button>
 							</li>
-							<li class="nav-item" role="presentation">
+							<li>
 								<button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="false">
 									<i class="fas fa-graduation-cap"></i>
 									<span class="tab-title text-bold">Education</span>
 								</button>
 							</li>
-							<li class="nav-item" role="presentation">
+							<li>
 								<button class="nav-link" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab" aria-controls="tab3" aria-selected="false">
 									<i class="fas fa-trophy"></i>
 									<span class="tab-title text-bold">Award</span>
 								</button>
 							</li>
-							<li class="nav-item" role="presentation">
+							<li>
 								<button class="nav-link" id="tab4-tab" data-bs-toggle="tab" data-bs-target="#tab4" type="button" role="tab" aria-controls="tab4" aria-selected="false">
 									<i class="fas fa-gem"></i>
 									<span class="tab-title text-bold">Skills</span>
@@ -211,8 +214,7 @@
 							</li>
 						</ul>
 					</div>
-					<!--<div class="tab-content">-->
-					<div class="tab-content" id="mgsAboutTabContent">
+					<div class="tab-content">
 						<div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
 							<div class="icon-holder experience">
 								<i class="fas fa-paper-plane"></i>
@@ -222,9 +224,9 @@
 								<li class="timeline-right">
 									<div class="timeline-badge">
 										<i class="fas fa-calendar-alt"></i>
-										<p class="date-inverted">Dec 2019 - Current</p>
+										<p class="date-inverted wow slideInLeft">Dec 2019 - Current</p>
 									</div><!-- end timeline-badge -->
-									<div class="timeline-panel">
+									<div class="timeline-panel wow slideInRight">
 										<div class="experience-content">
 											<h4>MGS PVT. LTD.</h4>
 											<h5>Creative Director</h5>
@@ -235,9 +237,9 @@
 								<li class="timeline-left">
 									<div class="timeline-badge">
 										<i class="fas fa-calendar-alt"></i>								
-										<p class="date">Oct 2018 - Nov 2019</p>
+										<p class="date wow slideInRight">Oct 2018 - Nov 2019</p>
 									</div><!-- end timeline-badge -->
-									<div class="timeline-panel">
+									<div class="timeline-panel wow slideInLeft">
 										<div class="experience-content">
 											<h4>MGS PVT. LTD.</h4>
 											<h5>Senior Designer </h5>
@@ -248,9 +250,9 @@
 								<li class="timeline-right">
 									<div class="timeline-badge">
 										<i class="fas fa-calendar-alt"></i>
-										<p class="date-inverted">Sep 2015 - Sep 2018</p>
+										<p class="date-inverted wow slideInLeft">Sep 2015 - Sep 2018</p>
 									</div><!-- end timeline-badge -->
-									<div class="timeline-panel">
+									<div class="timeline-panel wow slideInRight">
 										<div class="experience-content">
 											<h4>MGS PVT. LTD.</h4>
 											<h5>Designer</h5>
@@ -406,7 +408,7 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<!-- start section title-wrap -->
-					<div class="title-wrap">
+					<div class="title-wrap wow zoomIn">
 						<div class="section-title-box">
 							<h2 class="section-title">My  <strong>Services</strong></h2>
 						</div><!-- end section-title-box -->
@@ -523,7 +525,7 @@
 			<div class="row" >
 				<div class="col-sm-12">
 					<!-- start section title-wrap -->
-					<div class="title-wrap">
+					<div class="title-wrap wow zoomIn">
 						<div class="section-title-box">
 							<h2 class="section-title">My  <strong>Team</strong></h2>
 						</div><!-- end section-title-box -->
@@ -688,7 +690,7 @@
 			<div class="row text-center">
 				<div class="col-sm-12">
 					<!-- start section title-wrap -->
-					<div class="title-wrap">
+					<div class="title-wrap wow zoomIn">
 						<div class="section-title-box">
 							<h2 class="section-title">Success  <strong>Story</strong></h2>
 						</div><!-- end section-title-box -->
@@ -745,7 +747,7 @@
 			<div class="row">				
 				<div class="col-sm-12">
 					<!-- start section title-wrap -->
-					<div class="title-wrap">
+					<div class="title-wrap wow zoomIn">
 						<div class="section-title-box">
 							<h2 class="section-title">My  <strong>Clients</strong></h2>
 						</div><!-- end section-title-box -->
@@ -804,7 +806,7 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<!-- start section title-wrap -->
-					<div class="title-wrap">
+					<div class="title-wrap wow zoomIn">
 						<div class="section-title-box">
 							<h2 class="section-title">Portfolio  <strong>Gallery</strong></h2>
 						</div><!-- end section-title-box -->
@@ -983,7 +985,7 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<!-- start section title-wrap -->
-					<div class="title-wrap">
+					<div class="title-wrap wow zoomIn">
 						<div class="section-title-box">
 							<h2 class="section-title">Pricing  <strong>Plan</strong></h2>
 						</div><!-- end section-title-box -->
@@ -996,7 +998,7 @@
 			</div><!-- end row -->	
 			<div class="row">
 				<div class="col-md-4">
-					<div class="pricing-plan-wrap">
+					<div class="pricing-plan-wrap wow slideInLeft">
 						<div class="pricing-plan-header">
 							<h3>Starter</h3>
 							<div class="price-holder">
@@ -1014,7 +1016,7 @@
 					</div><!-- end pricing-plan-wrap -->
 				</div><!-- end pricing-plan -->
 				<div class="col-md-4">
-					<div class="pricing-plan-wrap active">
+					<div class="pricing-plan-wrap active wow zoomIn">
 						<div class="pricing-plan-header">
 							<h3>Standard</h3>
 							<div class="price-holder">
@@ -1032,7 +1034,7 @@
 					</div><!-- end pricing-plan-wrap -->
 				</div><!-- end pricing-plan -->
 				<div class="col-md-4">
-					<div class="pricing-plan-wrap">
+					<div class="pricing-plan-wrap wow slideInRight">
 						<div class="pricing-plan-header">
 							<h3>Premium</h3>
 							<div class="price-holder">
@@ -1061,7 +1063,7 @@
 				<div class="col-md-12">
 					<div class="quotes-wrap text-center">
 						<!-- start section title-wrap -->
-						<div class="title-wrap">
+						<div class="title-wrap wow zoomIn">
 							<div class="section-title-box">
 								<h2 class="section-title">Let's Work  <strong>Together</strong></h2>
 							</div><!-- end section-title-box -->
@@ -1082,7 +1084,7 @@
 			<div class="row">	
 				<div class="col-sm-12">
 					<!-- start section title-wrap -->
-					<div class="title-wrap">
+					<div class="title-wrap wow zoomIn">
 						<div class="section-title-box">
 							<h2 class="section-title">Blog  <strong>Post</strong></h2>
 						</div><!-- end section-title-box -->
@@ -1269,7 +1271,7 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<!-- start section title-wrap -->
-					<div class="title-wrap">
+					<div class="title-wrap wow zoomIn">
 						<div class="section-title-box">
 							<h2 class="section-title">What  <strong>Client Say!</strong></h2>
 						</div><!-- end section-title-box -->
@@ -1344,7 +1346,7 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<!-- start section title-wrap -->
-					<div class="title-wrap">
+					<div class="title-wrap wow zoomIn">
 						<div class="section-title-box">
 							<h2 class="section-title">Wanna  <strong>Talk</strong></h2>
 						</div><!-- end section-title-box -->
@@ -1639,6 +1641,11 @@
 	<script src="js/popper.min.js"></script>
 	<!-- Bootstrap4 Js -->
 	<script src="js/bootstrap.min.js"></script>
+	<!-- Particles JS -->
+	<script src="js/particles.min.js"></script>
+	<script src="js/app.js"></script>
+	<!-- wow Js -->
+	<script src="js/wow.min.js"></script>
 	<!-- Circle Progress Js -->
 	<script src="js/circle-progress.js"></script>
 	<!-- Isotope Filtring Js -->
@@ -1656,6 +1663,9 @@
 	<script src="js/validator.min.js"></script>
 	<!-- Template main Js -->
 	<script src="js/main.js"></script>
+	<script>
+		var wow = new WOW({});wow.init();
+	</script>
 	
 </body>
 </html>
